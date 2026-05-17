@@ -20,117 +20,97 @@ interface SeedTrackedDestinationRow {
 }
 
 const seedRows: SeedTrackedDestinationRow[] = [
+// 2027/01 桃園 TPE → 檳城 PEN
+  // 需求：週四 / 週五出發，隔週週二 / 週三回程，直飛
   {
-    id: "lon-kef-rt-econ",
-    originAirportCode: "LON",
-    destinationAirportCode: "KEF",
-    destinationCity: "Reykjavik",
-    destinationCountry: "Iceland",
+    id: "tpe-pen-rt-econ-2027-01",
+    originAirportCode: "TPE",
+    destinationAirportCode: "PEN",
+    destinationCity: "Penang",
+    destinationCountry: "Malaysia",
     tripType: "round_trip",
     cabinClass: "economy",
-    departureDateFrom: "2026-06-01",
-    departureDateTo: "2026-06-30",
-    returnDateFrom: "2026-06-04",
-    returnDateTo: "2026-07-10",
-    maxStops: 1,
-    currencyCode: "GBP",
-    locale: "en-GB"
+    departureDateFrom: "2027-01-01",
+    departureDateTo: "2027-01-29",
+    returnDateFrom: "2027-01-12",
+    returnDateTo: "2027-02-10",
+    maxStops: 0,
+    currencyCode: "TWD",
+    locale: "zh-TW"
   },
+
+  // 2027/05月底～06月初 松山 TSA → 東京羽田 HND
+  // 需求：月底 / 六月初出發，5～7天回程，直飛
   {
-    id: "lon-cph-rt-econ",
-    originAirportCode: "LON",
-    destinationAirportCode: "CPH",
-    destinationCity: "Copenhagen",
-    destinationCountry: "Denmark",
+    id: "tsa-hnd-rt-econ-2027-05-06",
+    originAirportCode: "TSA",
+    destinationAirportCode: "HND",
+    destinationCity: "Tokyo Haneda",
+    destinationCountry: "Japan",
     tripType: "round_trip",
     cabinClass: "economy",
-    departureDateFrom: "2026-06-01",
-    departureDateTo: "2026-06-30",
-    returnDateFrom: "2026-06-04",
-    returnDateTo: "2026-07-10",
-    maxStops: 1,
-    currencyCode: "GBP",
-    locale: "en-GB"
+    departureDateFrom: "2027-05-25",
+    departureDateTo: "2027-06-07",
+    returnDateFrom: "2027-05-30",
+    returnDateTo: "2027-06-14",
+    maxStops: 0,
+    currencyCode: "TWD",
+    locale: "zh-TW"
   },
+
+  // 2027/05月底～06月初 桃園 TPE → 東京羽田 HND
   {
-    id: "lon-arn-rt-econ",
-    originAirportCode: "LON",
-    destinationAirportCode: "ARN",
-    destinationCity: "Stockholm",
-    destinationCountry: "Sweden",
+    id: "tpe-hnd-rt-econ-2027-05-06",
+    originAirportCode: "TPE",
+    destinationAirportCode: "HND",
+    destinationCity: "Tokyo Haneda",
+    destinationCountry: "Japan",
     tripType: "round_trip",
     cabinClass: "economy",
-    departureDateFrom: "2026-06-01",
-    departureDateTo: "2026-06-30",
-    returnDateFrom: "2026-06-04",
-    returnDateTo: "2026-07-10",
-    maxStops: 1,
-    currencyCode: "GBP",
-    locale: "en-GB"
+    departureDateFrom: "2027-05-25",
+    departureDateTo: "2027-06-07",
+    returnDateFrom: "2027-05-30",
+    returnDateTo: "2027-06-14",
+    maxStops: 0,
+    currencyCode: "TWD",
+    locale: "zh-TW"
   },
+
+  // 2027/05月底～06月初 桃園 TPE → 東京成田 NRT
   {
-    id: "lon-osl-rt-econ",
-    originAirportCode: "LON",
-    destinationAirportCode: "OSL",
-    destinationCity: "Oslo",
-    destinationCountry: "Norway",
+    id: "tpe-nrt-rt-econ-2027-05-06",
+    originAirportCode: "TPE",
+    destinationAirportCode: "NRT",
+    destinationCity: "Tokyo Narita",
+    destinationCountry: "Japan",
     tripType: "round_trip",
     cabinClass: "economy",
-    departureDateFrom: "2026-06-01",
-    departureDateTo: "2026-06-30",
-    returnDateFrom: "2026-06-04",
-    returnDateTo: "2026-07-10",
-    maxStops: 1,
-    currencyCode: "GBP",
-    locale: "en-GB"
+    departureDateFrom: "2027-05-25",
+    departureDateTo: "2027-06-07",
+    returnDateFrom: "2027-05-30",
+    returnDateTo: "2027-06-14",
+    maxStops: 0,
+    currencyCode: "TWD",
+    locale: "zh-TW"
   },
+
+  // 2027/11 桃園 TPE → 清邁 CNX
+  // 需求：11月出發，約5天回程，直飛
   {
-    id: "lon-hel-rt-econ",
-    originAirportCode: "LON",
-    destinationAirportCode: "HEL",
-    destinationCity: "Helsinki",
-    destinationCountry: "Finland",
+    id: "tpe-cnx-rt-econ-2027-11",
+    originAirportCode: "TPE",
+    destinationAirportCode: "CNX",
+    destinationCity: "Chiang Mai",
+    destinationCountry: "Thailand",
     tripType: "round_trip",
     cabinClass: "economy",
-    departureDateFrom: "2026-06-01",
-    departureDateTo: "2026-06-30",
-    returnDateFrom: "2026-06-04",
-    returnDateTo: "2026-07-10",
-    maxStops: 1,
-    currencyCode: "GBP",
-    locale: "en-GB"
-  },
-  {
-    id: "lon-bud-rt-econ",
-    originAirportCode: "LON",
-    destinationAirportCode: "BUD",
-    destinationCity: "Budapest",
-    destinationCountry: "Hungary",
-    tripType: "round_trip",
-    cabinClass: "economy",
-    departureDateFrom: "2026-06-01",
-    departureDateTo: "2026-06-30",
-    returnDateFrom: "2026-06-04",
-    returnDateTo: "2026-07-10",
-    maxStops: 1,
-    currencyCode: "GBP",
-    locale: "en-GB"
-  },
-  {
-    id: "lon-prg-rt-econ",
-    originAirportCode: "LON",
-    destinationAirportCode: "PRG",
-    destinationCity: "Prague",
-    destinationCountry: "Czech Republic",
-    tripType: "round_trip",
-    cabinClass: "economy",
-    departureDateFrom: "2026-06-01",
-    departureDateTo: "2026-06-30",
-    returnDateFrom: "2026-06-04",
-    returnDateTo: "2026-07-10",
-    maxStops: 1,
-    currencyCode: "GBP",
-    locale: "en-GB"
+    departureDateFrom: "2027-11-01",
+    departureDateTo: "2027-11-30",
+    returnDateFrom: "2027-11-06",
+    returnDateTo: "2027-12-05",
+    maxStops: 0,
+    currencyCode: "TWD",
+    locale: "zh-TW"
   }
 ];
 
